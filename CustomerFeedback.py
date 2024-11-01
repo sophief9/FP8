@@ -60,11 +60,11 @@ def retrieve_feedback():
         
         # Display feedback in a messagebox
         if feedback_output:
-            messagebox.showinfo("Feedback Entries", feedback_output)
+            print("Feedback Entries", feedback_output)
         else:
-            messagebox.showinfo("Feedback Entries", "No feedback entries found.")
+            print("Feedback Entries", "No feedback entries found.")
     else:
-        messagebox.showwarning("Access Denied", "Incorrect password!")
+        print("Access Denied", "Incorrect password!")
 
 # Create main window
 root = tk.Tk()
